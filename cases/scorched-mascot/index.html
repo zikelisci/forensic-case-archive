@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A classroom forensic-science investigation about fire evidence, collection errors, property damage, intent, and offense classification.">
+  <title>Case 001: The Scorched Mascot</title>
+  <link rel="stylesheet" href="../../styles.css">
+</head>
+<body class="case-body" data-case-id="scorched-mascot">
+  <a class="skip-link" href="#case-content">Skip to case content</a>
+  <header class="case-header">
+    <div>
+      <a class="archive-return" href="../../">← Case archive</a>
+      <p class="eyebrow">Spencer Forensic Science · Case 001</p>
+      <h1>The Scorched Mascot</h1>
+    </div>
+    <div class="case-status" aria-label="Case status">
+      <span class="status-light"></span>
+      <span>ACTIVE CASE</span>
+    </div>
+  </header>
+
+  <nav class="case-nav" aria-label="Case sections">
+    <button class="nav-tab active" data-panel="briefing">1. Briefing</button>
+    <button class="nav-tab" data-panel="scene">2. Scene</button>
+    <button class="nav-tab" data-panel="evidence">3. Evidence</button>
+    <button class="nav-tab" data-panel="interviews">4. Interviews</button>
+    <button class="nav-tab" data-panel="custody">5. Collection Log</button>
+    <button class="nav-tab" data-panel="report">6. Case Report</button>
+  </nav>
+
+  <main id="case-content">
+    <section id="briefing" class="panel active" tabindex="-1">
+      <div class="two-column briefing-grid">
+        <article class="paper-card">
+          <p class="stamp">INCIDENT BRIEF</p>
+          <h2>A small fire damaged the spirit display.</h2>
+          <p>At 5:12 p.m. on Tuesday, a custodian found a burned wooden mascot display beside the stadium equipment shed. The fire was out, but the painted panel, a rolling supply cart, and stored decorations were damaged. Investigators must determine whether the fire was accidental or deliberately/recklessly caused.</p>
+          <dl class="facts">
+            <div><dt>Location</dt><dd>Stadium equipment area</dd></div>
+            <div><dt>Window</dt><dd>4:35–5:12 p.m.</dd></div>
+            <div><dt>Estimated damage</dt><dd>$460</dd></div>
+            <div><dt>Your role</dt><dd>Evidence review team</dd></div>
+          </dl>
+        </article>
+        <article class="mission-card">
+          <h2>Your assignment</h2>
+          <ol class="mission-list">
+            <li>Document what you observe before deciding what happened.</li>
+            <li>Evaluate how each item was collected and packaged.</li>
+            <li>Separate reliable evidence from weak or compromised evidence.</li>
+            <li>Determine the best-supported cause and person of interest.</li>
+            <li>Classify the likely Georgia offense as a misdemeanor or felony.</li>
+          </ol>
+          <div class="callout">
+            <strong>Rule of the case:</strong> Do not classify the offense from the dollar amount alone. Method and intent matter too.
+          </div>
+          <button class="primary-button next-button" data-next="scene">Enter the scene</button>
+        </article>
+      </div>
+    </section>
+
+    <section id="scene" class="panel" tabindex="-1">
+      <div class="section-heading">
+        <div><p class="eyebrow">Initial walkthrough</p><h2>Stadium equipment area</h2></div>
+        <p>Open every numbered marker. Record observations separately from inferences.</p>
+      </div>
+      <div class="scene-layout">
+        <div class="scene-map fire-scene" aria-label="Top-down diagram of the stadium equipment area">
+          <div class="map-label label-door">STADIUM WALKWAY</div>
+          <div class="map-object cabinet">EQUIPMENT<br>SHED</div>
+          <div class="map-object counter">WOODEN MASCOT<br>DISPLAY</div>
+          <div class="map-object sink">BURN<br>AREA</div>
+          <div class="map-object desk">ROLLING SUPPLY CART</div>
+          <button class="hotspot" style="--x:18%;--y:29%" data-clue="scene-1" aria-label="Open scene marker 1">1</button>
+          <button class="hotspot" style="--x:34%;--y:66%" data-clue="scene-2" aria-label="Open scene marker 2">2</button>
+          <button class="hotspot" style="--x:53%;--y:42%" data-clue="scene-3" aria-label="Open scene marker 3">3</button>
+          <button class="hotspot" style="--x:80%;--y:72%" data-clue="scene-4" aria-label="Open scene marker 4">4</button>
+          <div class="north-arrow" aria-hidden="true">N ↑</div>
+          <div class="scale-bar" aria-label="Scale bar: two meters">2 m</div>
+        </div>
+        <aside class="clue-viewer" aria-live="polite">
+          <p class="eyebrow">Selected marker</p>
+          <div id="clue-placeholder">
+            <h3>Choose a marker</h3>
+            <p>The scene notes will appear here.</p>
+          </div>
+          <div id="scene-1" class="clue-detail" hidden><h3>1 · Display panel</h3><p>The lower-right portion of the wooden mascot is charred. Damage decreases upward and away from a plastic trash bin at its base.</p><p class="prompt">Observation or inference? “The fire began inside the trash bin.”</p></div>
+          <div id="scene-2" class="clue-detail" hidden><h3>2 · Footwear impression</h3><p>A partial impression is visible in damp soil behind the display. The heel contains a repeated diamond-and-bar tread.</p><p class="prompt">What should happen before anyone attempts to cast it?</p></div>
+          <div id="scene-3" class="clue-detail" hidden><h3>3 · Charred debris</h3><p>Blackened paper, melted plastic, and an unusual sweet chemical odor are present inside the trash bin.</p><p class="prompt">What container best preserves possible ignitable-liquid residue?</p></div>
+          <div id="scene-4" class="clue-detail" hidden><h3>4 · Extension cord</h3><p>A cord from the supply cart lies near the burn area. Its insulation is heat-damaged, and the nearby outlet breaker is tripped.</p><p class="prompt">Does a damaged cord prove that an electrical fault started the fire?</p></div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="evidence" class="panel" tabindex="-1">
+      <div class="section-heading">
+        <div><p class="eyebrow">Evidence locker</p><h2>Examine the submitted items</h2></div>
+        <p>For each item, consider both what it suggests and whether the procedure protected its integrity.</p>
+      </div>
+      <div class="evidence-grid flip-evidence-grid">
+        <article class="evidence-card flip-card" tabindex="0" role="button" aria-pressed="false"><div class="flip-card-inner"><div class="card-face card-front"><img src="../../assets/evidence/e01-footwear.webp" alt="Partial boot impression beside a measurement scale"><span class="tag">E-01</span><h3>Footwear impression</h3><p class="flip-hint">Click or press Enter to examine</p></div><div class="card-face card-back"><span class="tag">E-01</span><h3>Footwear impression</h3><p>Its diamond-and-bar heel is consistent with Morgan Davis’s boots.</p><h4>Collection record</h4><p>Photographed overall, midrange, and close-up with a scale, then cast. The dried cast was sealed in a labeled padded box.</p><p class="flip-hint">Click to return</p></div></div></article>
+        <article class="evidence-card flip-card" tabindex="0" role="button" aria-pressed="false"><div class="flip-card-inner"><div class="card-face card-front"><img src="../../assets/evidence/e02-fire-debris.webp" alt="Charred fire debris inside a brown paper bag"><span class="tag">E-02</span><h3>Charred fire debris</h3><p class="flip-hint">Click or press Enter to examine</p></div><div class="card-face card-back"><span class="tag">E-02</span><h3>Charred fire debris</h3><p>Lab screening reports a solvent pattern consistent with paint thinner used by Jamie’s art crew.</p><h4>Collection record</h4><p>Warm, wet debris was placed in a used paper bag that previously held art-room cleanup rags—not a clean airtight container.</p><p class="flip-hint">Click to return</p></div></div></article>
+        <article class="evidence-card flip-card" tabindex="0" role="button" aria-pressed="false"><div class="flip-card-inner"><div class="card-face card-front"><img src="../../assets/evidence/e03-cord.webp" alt="Heat-damaged extension cord near an outdoor outlet"><span class="tag">E-03</span><h3>Extension cord</h3><p class="flip-hint">Click or press Enter to examine</p></div><div class="card-face card-back"><span class="tag">E-03</span><h3>Extension cord</h3><p>No electrical arcing appears at the proposed origin. The breaker likely tripped after the fire began.</p><h4>Collection record</h4><p>Photographed before removal, air-dried, packaged separately, and labeled at both ends.</p><p class="flip-hint">Click to return</p></div></div></article>
+        <article class="evidence-card flip-card" tabindex="0" role="button" aria-pressed="false"><div class="flip-card-inner"><div class="card-face card-front"><img src="../../assets/evidence/e04-lighter.webp" alt="Red lighter beneath a rolling cart"><span class="tag">E-04</span><h3>Disposable lighter</h3><p class="flip-hint">Click or press Enter to examine</p></div><div class="card-face card-back"><span class="tag">E-04</span><h3>Disposable lighter</h3><p>A partial fingerprint is consistent with Morgan Davis’s right index finger.</p><h4>Collection record</h4><p>Photographed in place, handled with fresh gloves, secured in a rigid box, sealed, and submitted separately.</p><p class="flip-hint">Click to return</p></div></div></article>
+        <article class="evidence-card flip-card" tabindex="0" role="button" aria-pressed="false"><div class="flip-card-inner"><div class="card-face card-front"><img src="../../assets/evidence/e05-camera.webp" alt="Security-camera view of a student entering an equipment area"><span class="tag">E-05</span><h3>Stadium camera image</h3><p class="flip-hint">Click or press Enter to examine</p></div><div class="card-face card-back"><span class="tag">E-05</span><h3>Stadium camera image</h3><p>Morgan enters at 4:47 and leaves at 4:54. No one else enters before smoke appears.</p><h4>Collection record</h4><p>The original was preserved. A labeled working copy and access log were submitted by the SRO.</p><p class="flip-hint">Click to return</p></div></div></article>
+        <article class="evidence-card flip-card" tabindex="0" role="button" aria-pressed="false"><div class="flip-card-inner"><div class="card-face card-front"><img src="../../assets/evidence/e06-damage.webp" alt="Clipboard and photographs documenting mascot damage"><span class="tag">E-06</span><h3>Damage estimate</h3><p class="flip-hint">Click or press Enter to examine</p></div><div class="card-face card-back"><span class="tag">E-06</span><h3>Damage estimate</h3><p>Repairs total $460: $275 display, $125 cart, and $60 decorations.</p><h4>Documentation record</h4><p>Scene photographs, inventory records, and two written estimates support the total. The shed was not damaged.</p><p class="flip-hint">Click to return</p></div></div></article>
+        <article class="evidence-card flip-card" tabindex="0" role="button" aria-pressed="false"><div class="flip-card-inner"><div class="card-face card-front"><img src="../../assets/evidence/e07-solvent.webp" alt="Sealed solvent container on a scale in a cabinet"><span class="tag">E-07</span><h3>Solvent inventory</h3><p class="flip-hint">Click or press Enter to examine</p></div><div class="card-face card-back"><span class="tag">E-07</span><h3>Solvent inventory</h3><p>The thinner was locked away at 4:36. Its mass is unchanged from the morning inventory.</p><h4>Documentation record</h4><p>Jamie and Coach Bell signed the log. Photos show the sealed container and reveal a likely contamination source for E-02.</p><p class="flip-hint">Click to return</p></div></div></article>
+        <article class="evidence-card flip-card" tabindex="0" role="button" aria-pressed="false"><div class="flip-card-inner"><div class="card-face card-front"><img src="../../assets/evidence/e08-console.webp" alt="Auditorium lighting console displaying an activity log"><span class="tag">E-08</span><h3>Console activity log</h3><p class="flip-hint">Click or press Enter to examine</p></div><div class="card-face card-back"><span class="tag">E-08</span><h3>Console activity log</h3><p>Alex’s login was active from 4:40–5:15, with commands during the fire window.</p><h4>Collection record</h4><p>The original log was preserved and its clock verified. A login alone cannot prove who typed every command.</p><p class="flip-hint">Click to return</p></div></div></article>
+        <article class="evidence-card flip-card" tabindex="0" role="button" aria-pressed="false"><div class="flip-card-inner"><div class="card-face card-front"><img src="../../assets/evidence/e09-flyer.webp" alt="Crumpled pep-rally flyer marked in black pen"><span class="tag">E-09</span><h3>“Burn it down” flyer</h3><p class="flip-hint">Click or press Enter to examine</p></div><div class="card-face card-back"><span class="tag">E-09</span><h3>“Burn it down” flyer</h3><p>The handwritten slogan appears incriminating at first glance.</p><h4>Collection record</h4><p>Found 20 meters away. No usable prints, handwriting comparison, or personal connection exists. The slogan referred to the rival team.</p><p class="flip-hint">Click to return</p></div></div></article>
+        <article class="evidence-card flip-card" tabindex="0" role="button" aria-pressed="false"><div class="flip-card-inner"><div class="card-face card-front"><img src="../../assets/evidence/e10-phone.webp" alt="Locked smartphone sealed in a clear evidence bag"><span class="tag">E-10</span><h3>Phone message</h3><p class="flip-hint">Click or press Enter to examine</p></div><div class="card-face card-back"><span class="tag">E-10</span><h3>Phone message</h3><p>At 4:42 Morgan wrote, “That mascot is done. I’m going to light it up.”</p><h4>Search record</h4><p>The SRO used face unlock and searched the locked phone without consent, a warrant, or an identified emergency. The defense moved to suppress it.</p><p class="flip-hint">Click to return</p></div></div></article>
+      </div>
+    </section>
+
+    <section id="interviews" class="panel" tabindex="-1">
+      <div class="section-heading"><div><p class="eyebrow">Recorded statements</p><h2>People of interest & witnesses</h2></div><p>A statement is information—not proof. Compare each claim with the physical, digital, and documentary evidence.</p></div>
+      <div class="interview-stack">
+        <article class="interview"><div class="portrait">JB</div><div><h3>Jamie Brooks <span>Art crew</span></h3><blockquote>“We painted the mascot behind the shed and cleaned our brushes with thinner. I locked the supplies in the art room at 4:35. Coach Bell saw our group leave together.”</blockquote><p><strong>Access:</strong> Used solvent near the area earlier. <strong>Claim:</strong> Left before the fire window.</p></div></article>
+        <article class="interview"><div class="portrait">MD</div><div><h3>Morgan Davis <span>Pep-rally crew</span></h3><blockquote>“I went straight to the bus loop after setup. I never went behind the stadium, and I don’t carry a lighter. The display was ugly, but I wouldn’t burn it.”</blockquote><p><strong>Access:</strong> Helped move the display and knew the area. <strong>Claim:</strong> Was never at the scene after 4:35.</p></div></article>
+        <article class="interview"><div class="portrait">AT</div><div><h3>Alex Torres <span>Stage technician</span></h3><blockquote>“I ran the extension cord for the supply cart. It worked during setup. I unplugged the cart at the wall, but the cord stayed outside. At 4:40 I signed into the auditorium lighting console.”</blockquote><p><strong>Access:</strong> Installed the apparent electrical source. <strong>Claim:</strong> A digital log can verify location during the fire.</p></div></article>
+        <article class="interview"><div class="portrait">TR</div><div><h3>Taylor Reed <span>Student witness</span></h3><blockquote>“At about 4:50, I saw Jamie go through the stadium gate wearing a paint-splattered gray hoodie and carrying something red. I’m sure it was Jamie.”</blockquote><p><strong>Viewing conditions:</strong> Taylor was about 35 meters away, looking through a chain-link fence toward the setting sun. Taylor did not see the person’s face. <strong>Identification:</strong> Based on the hoodie.</p></div></article>
+        <article class="interview"><div class="portrait">RC</div><div><h3>Riley Chen <span>Bus-loop helper</span></h3><blockquote>“Morgan was at the bus loop with me from 4:40 until the buses left. The scanner was down, so I wrote Morgan on the paper roster at 4:49. Morgan never went back toward the stadium.”</blockquote><p><strong>Relationship:</strong> Riley and Morgan are close friends. <strong>Claim:</strong> The bus roster proves Morgan was away from the scene.</p></div></article>
+        <article class="interview document-record"><div class="portrait">BR</div><div><h3>Bus 12 check-in record <span>Supplemental record</span></h3><blockquote>4:49 p.m. — Morgan Davis — Route 12 — entered by R.C.</blockquote><p><strong>Record conditions:</strong> The electronic scanner was offline. Riley, a student helper, wrote the entry; the driver did not witness Morgan board. The bus camera shows Morgan’s assigned seat empty when the bus departed at 5:08.</p></div></article>
+      </div>
+    </section>
+
+    <section id="custody" class="panel" tabindex="-1">
+      <div class="section-heading"><div><p class="eyebrow">Quality control</p><h2>Collection & custody log</h2></div><p>Find the procedural problem. Decide how much it changes the case.</p></div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Item</th><th>Collected</th><th>Method / package</th><th>Transfers</th><th>Seal</th></tr></thead>
+          <tbody>
+            <tr><td>E-01</td><td>5:29 · J. Patel</td><td>Photos with scale; dental-stone cast; dry box</td><td>Patel → Locker 2</td><td>Initialed</td></tr>
+            <tr><td>E-02</td><td>5:24 · K. Owens</td><td>Warm debris placed in a used paper bag from the art-room supply bin</td><td>Owens → Patel → Lab</td><td>Resealed</td></tr>
+            <tr><td>E-03</td><td>5:41 · J. Patel</td><td>Photographed; air-dried; cord and plug packaged separately</td><td>Patel → Locker 2</td><td>Initialed</td></tr>
+            <tr><td>E-04</td><td>5:47 · SRO Bell</td><td>Fresh gloves; rigid box; individually secured</td><td>Bell → Patel → Locker 2</td><td>Initialed</td></tr>
+            <tr><td>E-05</td><td>6:03 · SRO Bell</td><td>Original preserved; labeled working copy</td><td>Bell → Digital locker</td><td>Access log</td></tr>
+            <tr><td>E-06</td><td>Next day · M. Vega</td><td>Scene photos; inventory; two written estimates</td><td>Vega → Case file</td><td>Signed</td></tr>
+            <tr><td>E-07</td><td>6:20 · J. Patel</td><td>Cabinet photographed; container weighed; storage log copied</td><td>Patel → Case file</td><td>Signed log</td></tr>
+            <tr><td>E-08</td><td>6:31 · R. Chen</td><td>Original system log preserved; clock verified; working copy created</td><td>Chen → Digital locker</td><td>Access log</td></tr>
+            <tr><td>E-09</td><td>5:58 · K. Owens</td><td>Photographed; paper envelope; location measured</td><td>Owens → Locker 2</td><td>Initialed</td></tr>
+            <tr><td>E-10</td><td>5:19 · SRO Bell</td><td>Locked phone opened with face unlock; messages searched without warrant or consent</td><td>Bell → Digital locker</td><td>Search challenged</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="analysis-prompts">
+        <article><span>01</span><p>Which item may have been cross-contaminated?</p></article>
+        <article><span>02</span><p>Can that item still be used to accuse or eliminate someone? Explain.</p></article>
+        <article><span>03</span><p>What container should have been used for possible ignitable-liquid residue?</p></article>
+        <article><span>04</span><p>Which item may be scientifically reliable but legally inadmissible?</p></article>
+        <article><span>05</span><p>If E-02 and E-10 are excluded, what conclusion does the remaining evidence support?</p></article>
+      </div>
+    </section>
+
+    <section id="report" class="panel" tabindex="-1">
+      <div class="section-heading"><div><p class="eyebrow">Evidence review team</p><h2>Case report</h2></div><p>Your entries save only on this device. Print or save as a PDF before leaving.</p></div>
+      <form id="case-form">
+        <div class="form-grid">
+          <label>Investigator name(s)<input name="investigators" autocomplete="off"></label>
+          <label>Class / period<input name="period" autocomplete="off"></label>
+        </div>
+        <label>Three objective observations from the scene<textarea name="observations" rows="4" placeholder="1.&#10;2.&#10;3."></textarea></label>
+        <fieldset class="report-questions">
+          <legend>Scene analysis questions</legend>
+          <label>1. “The fire began inside the trash bin.” Is this an observation or an inference? Explain.<textarea name="scene_q1" rows="3"></textarea></label>
+          <label>2. What should investigators do before attempting to cast the footwear impression?<textarea name="scene_q2" rows="3"></textarea></label>
+          <label>3. What type of container best preserves possible ignitable-liquid residue?<textarea name="scene_q3" rows="3"></textarea></label>
+          <label>4. Does the damaged extension cord prove that an electrical fault started the fire? Explain.<textarea name="scene_q4" rows="3"></textarea></label>
+        </fieldset>
+        <fieldset class="report-questions">
+          <legend>Collection, reliability, and admissibility</legend>
+          <label>5. Which evidence item may have been cross-contaminated? Identify the exact collection error.<textarea name="custody_q1" rows="3"></textarea></label>
+          <label>6. Can that compromised item still be used to accuse or eliminate someone? Explain its limitations.<textarea name="custody_q2" rows="3"></textarea></label>
+          <label>7. How should the fire debris have been collected and packaged instead?<textarea name="custody_q3" rows="3"></textarea></label>
+          <label>8. Which item may be scientifically reliable but legally inadmissible? Explain why.<textarea name="custody_q4" rows="3"></textarea></label>
+          <label>9. If E-02 and E-10 are excluded, what conclusion does the remaining evidence support?<textarea name="custody_q5" rows="4"></textarea></label>
+        </fieldset>
+        <fieldset class="report-questions">
+          <legend>Conflicting testimony and records</legend>
+          <label>10. Which witness statements or records conflict with one another? Cite at least two specific conflicts.<textarea name="witness_q1" rows="4"></textarea></label>
+          <label>11. How reliable is Taylor Reed’s identification of Jamie? Consider distance, lighting, obstruction, and what Taylor actually observed.<textarea name="witness_q2" rows="4"></textarea></label>
+          <label>12. Does the handwritten bus check-in outweigh the timestamped stadium image? Explain which record is better supported.<textarea name="witness_q3" rows="4"></textarea></label>
+          <label>13. Which person appears to be intentionally lying or falsifying a record? What evidence supports that conclusion, and what might the motive be?<textarea name="witness_q4" rows="4"></textarea></label>
+        </fieldset>
+        <fieldset><legend>Rate each item’s value to this case</legend><div id="rating-grid" class="rating-grid"></div></fieldset>
+        <label>Best-supported person of interest<select name="conclusion"><option value="">Select one</option><option>Jamie Brooks</option><option>Morgan Davis</option><option>Alex Torres</option><option>Evidence is insufficient</option></select></label>
+        <fieldset class="law-file">
+          <legend>Georgia charging decision</legend>
+          <p><strong>Criminal trespass:</strong> intentional damage of $500 or less without consent; misdemeanor.</p>
+          <p><strong>Criminal damage to property in the second degree:</strong> intentional damage over $500, <em>or</em> reckless or intentional damage to another’s property by fire or explosive; felony.</p>
+          <label>Best-supported classification<select name="offense"><option value="">Select one</option><option>No crime established — accidental fire</option><option>Criminal trespass — misdemeanor</option><option>Criminal damage to property, second degree — felony</option><option>Evidence is insufficient to classify</option></select></label>
+          <label>Which facts satisfy—or fail to satisfy—the required damage, method, and intent elements?<textarea name="legal_reasoning" rows="4"></textarea></label>
+        </fieldset>
+        <label>Write a CER conclusion. Cite at least two reliable items, address one weak or compromised item, and explain how intent affects your conclusion.<textarea name="cer" rows="7" placeholder="Claim:&#10;Evidence:&#10;Reasoning:"></textarea></label>
+        <div class="form-actions"><button type="button" class="primary-button" id="print-report">Print / Save PDF</button><button type="button" class="secondary-button" id="clear-report">Clear my report</button><span id="save-status" role="status">Saved locally</span></div>
+      </form>
+    </section>
+  </main>
+
+  <dialog id="confirm-dialog"><form method="dialog"><h2>Clear your report?</h2><p>This removes all saved responses from this device.</p><div class="dialog-actions"><button value="cancel" class="secondary-button">Cancel</button><button value="confirm" class="danger-button">Clear report</button></div></form></dialog>
+  <footer><p>Case 001 · Fire & Property Damage</p><p>Reliable evidence first. Legal classification second.</p></footer>
+  <script src="../../script.js"></script>
+</body>
+</html>
