@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Interactive forensic science mini-cases for evidence analysis and legal reasoning.">
+  <title>Forensic Case Archive</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="archive-body">
+  <a class="skip-link" href="#case-archive">Skip to case files</a>
+  <header class="archive-header">
+    <div class="agency-mark" aria-hidden="true">FS</div>
+    <div>
+      <p class="eyebrow">Spencer Forensic Science · Student Access</p>
+      <h1>Case File Archive</h1>
+      <p class="archive-intro">Select an assigned file. Examine the scene, audit the evidence, and support your conclusion.</p>
+    </div>
+    <div class="archive-stamp">AUTHORIZED<br>CLASSROOM USE</div>
+  </header>
+  <main id="case-archive" class="archive-main">
+    <section class="archive-toolbar" aria-label="Case archive summary">
+      <div><span class="toolbar-label">Division</span><strong>Forensic Investigations</strong></div>
+      <div><span class="toolbar-label">Open files</span><strong id="open-case-count">1</strong></div>
+      <div><span class="toolbar-label">Instruction</span><strong>Open your assigned case</strong></div>
+    </section>
+    <section aria-labelledby="active-files-title">
+      <div class="folder-heading"><span class="folder-tab">ACTIVE FILES</span><h2 id="active-files-title">Investigation docket</h2></div>
+      <div id="case-grid" class="case-grid"></div>
+    </section>
+  </main>
+  <footer><p>Forensic Case Archive</p><p>Evidence must be evaluated before conclusions are made.</p></footer>
+  <script src="catalog.js"></script>
+  <script src="archive.js"></script>
+</body>
+</html>
